@@ -18,14 +18,7 @@ namespace ViyarProject
         public User user = new User();
         public Order order = new Order();
         public Constructor constructor = new Constructor();
-        //[XmlArrayItem(ElementName = "material",
-        //Type = typeof(AbstractMaterial),
-        //Namespace = "n1"),
-        //XmlArrayItem(ElementName = "material",
-        //Type = typeof(DspMaterial),
-        //Namespace = "n2")]
-        //[XmlArrayItem( typeof(AbstractMaterial))]
-        //[XmlArrayItem(typeof(DspMaterial))]
+       
         [XmlArrayItem(ElementName = "material")]
         [XmlArray(ElementName="materials")]
         public List<AbstractMaterial> Materials = new List<AbstractMaterial>();

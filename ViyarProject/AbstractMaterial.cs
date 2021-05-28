@@ -8,7 +8,8 @@ using System.ComponentModel;
 
 namespace ViyarProject
 {
-    [XmlInclude(typeof(DspMaterial))]   
+    [XmlInclude(typeof(DspMaterial))]  
+    [XmlInclude(typeof(EdgeMaterial))] 
     public class AbstractMaterial
     {
         [XmlAttribute]

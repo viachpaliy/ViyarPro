@@ -36,7 +36,7 @@ namespace ViyarProject
         [XmlAttribute]
         public string uuid = "93d632db-d7e8-4178-98e2-641bb27485f7";
         [XmlAttribute]
-        public string name ="Ìàòåðèàë çàêàç÷èêà (ÄÑÏ)";
+        public string name ="�������� ��������� (���)";
         [XmlAttribute]
         public string width="2800";
         [XmlAttribute]
