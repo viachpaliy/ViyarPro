@@ -27,8 +27,12 @@ namespace TestProject
             det1.edges.Left.type="kromka";
             det1.edges.Left.param="2";
             det2.id="2";
-            det1.edges.Top.type="kromka";
-            det1.edges.Top.param="2";
+            det2.edges.Top.type="kromka";
+            det2.edges.Top.param="2";
+            var dril = new Drilling();
+            det1.Operations.Add(dril);
+            var groov = new Grooving();
+            det2.Operations.Add(groov);
             pr.viyar.details.details.Add(det1);
             pr.viyar.details.details.Add(det2);
             Console.WriteLine("Проект создан!");

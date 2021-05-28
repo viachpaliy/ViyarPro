@@ -5,6 +5,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System.Globalization;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace ViyarProject
 {
@@ -53,7 +54,13 @@ namespace ViyarProject
         public string BHXAvailable="true";
         [XmlAttribute]
         public string machineCode="1";
+
         public Edges edges = new Edges();
+
+        [XmlArrayItem(ElementName = "operation")]
+        [XmlArray(ElementName="operations")]
+        public List<AbstractOperation> Operations = new List<AbstractOperation>();
+     
 
         public Detail()
         {
