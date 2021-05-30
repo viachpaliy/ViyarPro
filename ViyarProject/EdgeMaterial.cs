@@ -24,15 +24,15 @@ namespace ViyarProject
         [XmlAttribute]
         public string name ="������ ��������� 22�0,5��";
         [XmlAttribute]
-        public string height ="22";
+        public double height =22;
         [XmlAttribute]
-        public string thickness = "0.5";
+        public double thickness = 0.5;
         [XmlAttribute]
         public string markingColor="rgb(255,0,0)";
 
         public EdgeMaterial()
         {
-            id = "2";
+            id = 2;
             type = "band";
         }
     }

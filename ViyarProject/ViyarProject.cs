@@ -16,7 +16,7 @@ namespace ViyarProject
     {
          
          [XmlAttribute]
-         public string currency="ãðí";
+         public string currency="грн";
          [XmlAttribute]
          public string version = "1";
          [XmlAttribute]
@@ -33,8 +33,21 @@ namespace ViyarProject
          public string productFilter = "false";
 
          public Viyar viyar = new Viyar() ;
+         
          public ViyarProject() { }     
          
+        public void addMaterial(AbstractMaterial material){
+            int matId = viyar.Materials.Count + 1;
+            material.id = matId;
+            viyar.Materials.Add(material);
+        }
+
+        public void addDetail(Detail detail){
+            int detId = viyar.details.details.Count + 1;
+            detail.id = detId;
+            viyar.details.details.Add(detail);
+        }
+
 
 
     }

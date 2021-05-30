@@ -13,7 +13,7 @@ namespace ViyarProject
     public class Detail
     {
         [XmlAttribute]
-        public string id="4";
+        public int id= 0;
         [XmlAttribute]
         public string tumbarikiConstructionName="";
         [XmlAttribute]
@@ -27,15 +27,15 @@ namespace ViyarProject
         [XmlAttribute]
         public string barcode="";
         [XmlAttribute]
-        public string amount="1";
+        public int amount= 1;
         [XmlAttribute]
-        public string width="500";
+        public double width= 500 ;
         [XmlAttribute]
-        public string height="400";
+        public double height= 400 ;
         [XmlAttribute]
-        public string widthFull="500";
+        public double widthFull= 500;
         [XmlAttribute]
-        public string heightFull="400";
+        public double heightFull= 400 ;
         [XmlAttribute]
         public string description="";
         [XmlAttribute]
@@ -65,6 +65,12 @@ namespace ViyarProject
         public Detail()
         {
             timestamp = DateTime.Now.ToString("yyyyMMddHHmmssffff");
+        }
+
+        public void addOperation(AbstractOperation operation){
+            int opId = Operations.Count + 1;
+            operation.id = opId;
+            Operations.Add(operation);
         }
 
     }

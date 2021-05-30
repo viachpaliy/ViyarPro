@@ -16,7 +16,7 @@ namespace ViyarProject
         [XmlAttribute]
         public string type="";
         [XmlAttribute]
-        public string param="0";
+        public int param= 0;
         [XmlAttribute]
         public string cut="0";
         [XmlAttribute]

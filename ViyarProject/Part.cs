@@ -14,11 +14,11 @@ namespace ViyarProject
     public class Part
     {
         [XmlAttribute]
-        public string width="2800";
+        public double width= 2800;
         [XmlAttribute]
-        public string height="2070";
+        public double height= 2070;
         [XmlAttribute]
-        public string quantity="1";
+        public int quantity= 1;
         
         public Part(){}
     }

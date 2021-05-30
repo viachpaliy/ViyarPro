@@ -14,15 +14,15 @@ namespace ViyarProject
     public class DspMaterial : AbstractMaterial
     {       
         [XmlAttribute]
-        public string offcut_l="10" ;
+        public double offcut_l= 10 ;
         [XmlAttribute]
-        public string offcut_t="10" ;
+        public double offcut_t= 10 ;
         [XmlAttribute]
-        public string offcut_r="5" ;
+        public double offcut_r= 5 ;
         [XmlAttribute]
-        public string offcut_b="5" ;
+        public double offcut_b= 5 ;
         [XmlAttribute]
-        public string userOffcut="0" ;
+        public double userOffcut= 0;
         [XmlAttribute]
         public string directCut="0";
         [XmlAttribute]
@@ -38,11 +38,11 @@ namespace ViyarProject
         [XmlAttribute]
         public string name ="�������� ��������� (���)";
         [XmlAttribute]
-        public string width="2800";
+        public double width= 2800;
         [XmlAttribute]
-        public string height ="2070";
+        public double height = 2070;
         [XmlAttribute]
-        public string thickness = "18";
+        public double thickness = 18;
         [XmlAttribute]
         public string isCliental="1";
         [XmlAttribute]
@@ -53,7 +53,7 @@ namespace ViyarProject
 
         public DspMaterial()
         {
-            id = "1";
+            id = 1;
             type = "sheet";
             Parts.Add(new Part());
         }

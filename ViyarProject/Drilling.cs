@@ -16,25 +16,26 @@ namespace ViyarProject
         [XmlAttribute]
         public string subtype="0";
         [XmlAttribute]
-        public string side="1";
+        public int side= 1;
         [XmlAttribute]
-        public string  x="9";
+        public double  x= 9;
         [XmlAttribute]
-        public string y="50";
+        public double y= 50;
         [XmlAttribute]
-        public string xo="9";
+        public double xo= 9;
         [XmlAttribute]
-        public string yo="50";
+        public double yo= 50;
         [XmlAttribute]
-        public string xl="0";
+        public double xl= 0;
         [XmlAttribute]
-        public string yl="0";
+        public double yl= 0;
         [XmlAttribute]
-        public string d="7";
+        public double d= 7;
         [XmlAttribute]
-        public string depth="30";
+        public double depth= 30;
         [XmlAttribute]
         public string millD="0";
+
 
         public Drilling()
         {

@@ -13,7 +13,7 @@ namespace ViyarProject
     public class AbstractMaterial
     {
         [XmlAttribute]
-        public string id = "0";
+        public int id = 0;
         [XmlAttribute]
         public string type = "abstract";
       

@@ -14,27 +14,27 @@ namespace ViyarProject
     public class Grooving : AbstractOperation
     {       
         [XmlAttribute]
-        public string side="6";
+        public int side= 6;
         [XmlAttribute]
         public string subtype="0";
         [XmlAttribute]
-        public string x="0";
+        public double x= 0;
         [XmlAttribute]
-        public string y="10";
+        public double y= 10;
         [XmlAttribute]
         public string bindH="false";
         [XmlAttribute]
         public string bindV="false";
         [XmlAttribute]
-        public string xa="-0.5";
+        public double xa=-0.5;
         [XmlAttribute]
-        public string ya="9.5";
+        public double ya=9.5;
         [XmlAttribute]
-        public string width="4";
+        public double width=4;
         [XmlAttribute]
-        public string length="710";
+        public double length=710;
         [XmlAttribute]
-        public string depth="8";
+        public double depth= 8;
         [XmlAttribute]
         public string closed="1";
         [XmlAttribute]
